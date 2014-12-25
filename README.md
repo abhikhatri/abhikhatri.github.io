@@ -8,7 +8,7 @@ This repo is dedicated to my personal portfolio website.
 
 
 
-I wanna thank t some special people, Dont forget to check them out. 
+I wanna thank to some special people, Dont forget to check them out. 
 
 #### [Luke Meyer](http://plus.google.com/+lukemeyerexpandat)
 
