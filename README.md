@@ -10,8 +10,8 @@ This repo is dedicated to my personal portfolio website.
 
 I wanna thank to some special people, Dont forget to check them out. 
 
-#### [Luke Meyer](http://plus.google.com/+lukemeyerexpandat)
-
 ####[Aaron Segal](http://plus.google.com/+AaronSegal317)
+
+#### [Luke Meyer](http://plus.google.com/+lukemeyerexpandat)
 
 #### [Devtips](https://www.youtube.com/user/DevTipsForDesigners) 
