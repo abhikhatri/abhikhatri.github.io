@@ -1,3 +1,63 @@
-@import './node_modules/font-awesome/scss/font-awesome.scss';
+@import './node_modules/foundation-sites/scss/foundation';
+@include foundation-everything; //Including foundation mixins
+@import './node_modules/font-awesome/scss/font-awesome';
 @import 'variables';
-@import 'main';
+@import 'base';
+
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+.hero-section{
+  color: $accent-white;
+  height: 100%;
+  width: 100%;
+  display: table;
+  background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)), url(/img/vo32bd8.jpg) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.h-avatar{
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.h-content{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.h-intro{
+  font-size: 68px;
+  font-weight: 700;
+}
+
+.h-profession{
+  font-size: 66px;
+  font-weight: 400;
+}
+
+.h-tagline{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+#about{
+  padding: 50px 0;
+}
+
+#footer{
+  padding-bottom: 40px;
+
+  .fa{
+    color: $accent-black;
+    font-size: 24px;
+    margin: 0 8px;
+  }
+}

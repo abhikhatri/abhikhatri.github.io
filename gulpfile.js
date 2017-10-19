@@ -15,7 +15,7 @@ function errorLog(error){
 
 //Compress and concat JS File
 gulp.task('script', function(){
-    return gulp.src(['./js/vendor/*.js', './js/*.js'])
+    return gulp.src(['./js/vendor/jquery.min.js', './js/main.js'])
     .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
@@ -37,12 +37,17 @@ gulp.task('sass', function(){
 
 });
 
-gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+gulp.task('fonts', function() {
+    gulp.src('./node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
+gulp.task('watch', ['script', 'sass', 'fonts'], function () {
+  gulp.watch('./sass/**/*.scss', ['sass', 'fonts']);
   gulp.watch('./js/*.js', ['script']);
 });
 
 
-gulp.task('default', ['script', 'style']);
+gulp.task('default', ['script', 'sass', 'fonts']);
 
 
